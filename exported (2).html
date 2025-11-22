@@ -228,7 +228,8 @@ window.onclick=(e)=>{ if(e.target.classList.contains("modal")) closeModal(e.targ
 document.getElementById("loginForm").onsubmit = e => { e.preventDefault(); alert("تم تسجيل الدخول!"); closeModal(loginModal); }
 document.getElementById("signupForm").onsubmit = e => { e.preventDefault(); alert("تم التسجيل!"); closeModal(signupModal); }
 
-const API_URL = "http://localhost:8080/api/books";
+const API_URL = "http://localhost:8080/api/books/dto";
+
 const categoryColors = {
   "Fiction": "#ffe0b2",
   "Science": "#b3e5fc",
